@@ -14,7 +14,7 @@ namespace TeamBuilding.Tabs
         public Users _user = null;
 
         private List<ListBox> ListBoxes;
-        private int selectedUser = Form1.SelectedUser - 1;
+        private int selectedUser = StartUp.SelectedUser - 1;
         private int i = 0;
 
         public ActivityTab()

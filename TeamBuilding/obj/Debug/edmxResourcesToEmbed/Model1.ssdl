@@ -37,6 +37,7 @@
   <EntityType Name="LikedProjects">
     <Key>
       <PropertyRef Name="LkdUserId" />
+      <PropertyRef Name="LkdPrjtId" />
     </Key>
     <Property Name="LkdUserId" Type="int" Nullable="false" />
     <Property Name="LkdPrjtId" Type="int" Nullable="false" />
@@ -113,13 +114,13 @@
     <Property Name="Name" Type="varchar" MaxLength="50" />
     <Property Name="LastName" Type="varchar" MaxLength="50" />
     <Property Name="RegMail" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Bio" Type="text" />
     <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="PicturePath" Type="varchar" MaxLength="500" />
     <Property Name="Registered" Type="smalldatetime" />
     <Property Name="ContactId" Type="int" />
     <Property Name="RequetId" Type="int" />
     <Property Name="LikedPrjtId" Type="int" />
+    <Property Name="Bio" Type="text" />
   </EntityType>
   <EntityType Name="UsrSkills">
     <Key>
@@ -273,18 +274,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Users_LikedProjects1">
-    <End Role="LikedProjects" Type="Self.LikedProjects" Multiplicity="0..1" />
-    <End Role="Users" Type="Self.Users" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="LikedProjects">
-        <PropertyRef Name="LkdUserId" />
-      </Principal>
-      <Dependent Role="Users">
-        <PropertyRef Name="LikedPrjtId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Users_Requests">
     <End Role="Requests" Type="Self.Requests" Multiplicity="0..1" />
     <End Role="Users" Type="Self.Users" Multiplicity="*" />
@@ -382,10 +371,6 @@
     </AssociationSet>
     <AssociationSet Name="FK_Users_Contacts" Association="Self.FK_Users_Contacts">
       <End Role="Contacts" EntitySet="Contacts" />
-      <End Role="Users" EntitySet="Users" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Users_LikedProjects1" Association="Self.FK_Users_LikedProjects1">
-      <End Role="LikedProjects" EntitySet="LikedProjects" />
       <End Role="Users" EntitySet="Users" />
     </AssociationSet>
     <AssociationSet Name="FK_Users_Requests" Association="Self.FK_Users_Requests">

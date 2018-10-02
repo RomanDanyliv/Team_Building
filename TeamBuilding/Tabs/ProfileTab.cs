@@ -22,7 +22,7 @@ namespace TeamBuilding.Tabs
             {
                 _user = user;
                 var chosenOne = user;
-                pictureBox1.Image = new Bitmap(@"..\..\Pictures\" + chosenOne.PicturePath);
+                pictureBox1.Image = new Bitmap(@"Pictures\" + chosenOne.PicturePath);
                 bunifuCustomLabel2.Text = chosenOne.Name;
                 bunifuCustomLabel3.Text = "Joined: " + chosenOne.Registered;
                 bunifuCustomLabel4.Text = "Your projects: " + chosenOne.Projects1.Count;

@@ -24,10 +24,10 @@
   <EntityType Name="LikedProjects">
     <Key>
       <PropertyRef Name="LkdUserId" />
+      <PropertyRef Name="LkdPrjtId" />
     </Key>
     <Property Name="LkdUserId" Type="Int32" Nullable="false" />
     <Property Name="LkdPrjtId" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Users" Relationship="Self.FK_Users_LikedProjects1" FromRole="LikedProjects" ToRole="Users" />
   </EntityType>
   <EntityType Name="PrjtClasses">
     <Key>
@@ -95,15 +95,14 @@
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="RegMail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Bio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="PicturePath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
     <Property Name="Registered" Type="DateTime" Precision="0" />
     <Property Name="ContactId" Type="Int32" />
     <Property Name="RequetId" Type="Int32" />
     <Property Name="LikedPrjtId" Type="Int32" />
+    <Property Name="Bio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Contacts" Relationship="Self.FK_Users_Contacts" FromRole="Users" ToRole="Contacts" />
-    <NavigationProperty Name="LikedProjects" Relationship="Self.FK_Users_LikedProjects1" FromRole="Users" ToRole="LikedProjects" />
     <NavigationProperty Name="Projects" Relationship="Self.FK_Projects_Users" FromRole="Users" ToRole="Projects" />
     <NavigationProperty Name="Requests" Relationship="Self.FK_Users_Requests" FromRole="Users" ToRole="Requests" />
     <NavigationProperty Name="Projects1" Relationship="Self.CreatedPrjts" FromRole="Users" ToRole="Projects" />
@@ -132,18 +131,6 @@
       </Principal>
       <Dependent Role="Users">
         <PropertyRef Name="ContactId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Users_LikedProjects1">
-    <End Role="LikedProjects" Type="Self.LikedProjects" Multiplicity="0..1" />
-    <End Role="Users" Type="Self.Users" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="LikedProjects">
-        <PropertyRef Name="LkdUserId" />
-      </Principal>
-      <Dependent Role="Users">
-        <PropertyRef Name="LikedPrjtId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -219,10 +206,6 @@
     </AssociationSet>
     <AssociationSet Name="FK_Users_Contacts" Association="Self.FK_Users_Contacts">
       <End Role="Contacts" EntitySet="Contacts" />
-      <End Role="Users" EntitySet="Users" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Users_LikedProjects1" Association="Self.FK_Users_LikedProjects1">
-      <End Role="LikedProjects" EntitySet="LikedProjects" />
       <End Role="Users" EntitySet="Users" />
     </AssociationSet>
     <AssociationSet Name="FK_PrjtClasses_Projects" Association="Self.FK_PrjtClasses_Projects">

@@ -29,16 +29,15 @@ namespace TeamBuilding
         public string Name { get; set; }
         public string LastName { get; set; }
         public string RegMail { get; set; }
-        public string Bio { get; set; }
         public string Password { get; set; }
         public string PicturePath { get; set; }
         public Nullable<System.DateTime> Registered { get; set; }
         public Nullable<int> ContactId { get; set; }
         public Nullable<int> RequetId { get; set; }
         public Nullable<int> LikedPrjtId { get; set; }
+        public string Bio { get; set; }
     
         public virtual Contacts Contacts { get; set; }
-        public virtual LikedProjects LikedProjects { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Projects> Projects { get; set; }
         public virtual Requests Requests { get; set; }

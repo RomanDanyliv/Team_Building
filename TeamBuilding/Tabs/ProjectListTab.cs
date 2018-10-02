@@ -54,9 +54,9 @@ namespace TeamBuilding.Tabs
                     pictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
                     pictureBox.Size = new Size(655, 250);
                     pictureBox.Location = new Point(50, pictureBoxY);
-                    if (File.Exists(@"..\..\Pictures\" + chosenProject.PrjtImagePath))
-                    pictureBox.Image = new Bitmap(@"..\..\Pictures\" + chosenProject.PrjtImagePath);
-                    else pictureBox.Image = new Bitmap(@"..\..\Pictures\default.jpg");
+                    if (File.Exists(@"Pictures\" + chosenProject.PrjtImagePath))
+                    pictureBox.Image = new Bitmap(@"Pictures\" + chosenProject.PrjtImagePath);
+                    else pictureBox.Image = new Bitmap(@"Pictures\default.jpg");
                     pictureBoxY += 400;
 
                     BunifuSeparator separator = new BunifuSeparator();

@@ -88,13 +88,13 @@
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="LastName" ColumnName="LastName" />
           <ScalarProperty Name="RegMail" ColumnName="RegMail" />
-          <ScalarProperty Name="Bio" ColumnName="Bio" />
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="PicturePath" ColumnName="PicturePath" />
           <ScalarProperty Name="Registered" ColumnName="Registered" />
           <ScalarProperty Name="ContactId" ColumnName="ContactId" />
           <ScalarProperty Name="RequetId" ColumnName="RequetId" />
           <ScalarProperty Name="LikedPrjtId" ColumnName="LikedPrjtId" />
+          <ScalarProperty Name="Bio" ColumnName="Bio" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
