@@ -79,6 +79,7 @@
     <Compile Include="Classes.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="Contacts.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

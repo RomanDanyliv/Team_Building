@@ -9,7 +9,7 @@ namespace TeamBuilding.Tabs
 {
     public partial class CategoriesTab : UserControl
     {
-        public TeamBuildingEntities TeamBuildingEntities = new TeamBuildingEntities();
+        public TeamBuildingEntities TeamBuildingEntities =Connection.Instance();
         public ObservableCollection<Classes> ClassesList;
 
         public int Counter = 0;

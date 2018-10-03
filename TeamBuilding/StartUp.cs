@@ -75,7 +75,7 @@ namespace TeamBuilding
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-            var teamBuildingEntities = new TeamBuildingEntities();
+            var teamBuildingEntities =Connection.Instance();
             var usersList = new ObservableCollection<Users>(teamBuildingEntities.Users);
             foreach (var user in usersList)
             {
@@ -124,7 +124,7 @@ namespace TeamBuilding
 
         private void bunifuThinButton26_Click(object sender, EventArgs e)
         {
-            var teamBuildingEntities = new TeamBuildingEntities();
+            var teamBuildingEntities =Connection.Instance();
             bool sueccessfullLogin = false;
 
             try

@@ -7,7 +7,7 @@ namespace TeamBuilding.Tabs
 {
     public partial class ProfileTab : UserControl
     {
-        public TeamBuildingEntities TeamBuildingEntities = new TeamBuildingEntities();
+        public TeamBuildingEntities TeamBuildingEntities =Connection.Instance();
         public ObservableCollection<Users> UsersList;
         public Users _user = null;
 
@@ -21,12 +21,21 @@ namespace TeamBuilding.Tabs
             try
             {
                 _user = user;
-                var chosenOne = user;
-                pictureBox1.Image = new Bitmap(@"Pictures\" + chosenOne.PicturePath);
-                bunifuCustomLabel2.Text = chosenOne.Name;
-                bunifuCustomLabel3.Text = "Joined: " + chosenOne.Registered;
-                bunifuCustomLabel4.Text = "Your projects: " + chosenOne.Projects1.Count;
-
+                pictureBox1.Image = new Bitmap(@"Pictures\" + _user.PicturePath);
+                bunifuCustomLabel2.Text = _user.Name+" "+_user.LastName;
+                bunifuCustomLabel3.Text = "Joined: " + _user.Registered;
+                bunifuCustomLabel4.Text = "Project counter: " + _user.Projects1.Count;
+                BioField.Text = _user.Bio;
+                ClassList.Items.Clear();
+                foreach (var Class in _user.Classes)
+                {
+                    ClassList.Items.Add(Class.ClassName);
+                }
+                SkillsList.Items.Clear();
+                foreach (var skills in _user.Skills)
+                {
+                    SkillsList.Items.Add(skills.SklName);
+                }
                 try
                 {
                     var userContacts = user.Contacts;
@@ -68,8 +77,7 @@ namespace TeamBuilding.Tabs
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            //_parent.
-            SettingTab tab=new SettingTab(_user);
+            SettingTab tab=new SettingTab(_user,this);
             tab.Visible = true;
             tab.StartInfo();
             Controls.Add(tab);

@@ -8,12 +8,13 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Windows.Forms;
+using TeamBuilding.Tabs;
 
 namespace TeamBuilding
 {
     public partial class SettingTab : UserControl
     {
-        public TeamBuildingEntities TeamBuildingEntities = new TeamBuildingEntities();
+        public TeamBuildingEntities TeamBuildingEntities =Connection.Instance();
         public ObservableCollection<Users> UsersList;
         public Users _user = null;
         private static SettingTab _instance;
@@ -21,6 +22,7 @@ namespace TeamBuilding
         private String _imagePath = "";
         private Projects ExistedProject = null;
         private Projects _newProject;
+        private ProfileTab _tab = null;
 
         /*
         public static SettingTab Instance
@@ -34,11 +36,12 @@ namespace TeamBuilding
         }
         */
 
-        public SettingTab(Users user)
+        public SettingTab(Users user, ProfileTab tab)
         {
             InitializeComponent();
             _user = user;
             _currentPanel = panel1;
+            _tab = tab;
         }
 
         private void bunifuThinButton21_Click(object sender, System.EventArgs e)
@@ -102,6 +105,7 @@ namespace TeamBuilding
                     Visible = false;
                     UpdateData();
                     Clear_fields();
+                    _tab.LoadUserData(_user);
                 }
             }
 
@@ -154,7 +158,7 @@ namespace TeamBuilding
                         SklName = SkillsList.Items[i].ToString(),
                         Users = new List<Users>()
                     });
-                    TeamBuildingEntities.SaveChanges();
+                    //TeamBuildingEntities.SaveChanges();
                     _user.Skills.Add(TeamBuildingEntities.Skills.ToList().Last());
                 }
             }
@@ -162,6 +166,7 @@ namespace TeamBuilding
             for (int i = 0; i < ClassList.Items.Count; i++)
                 if (ClassList.GetItemChecked(i))
                     _user.Classes.Add(TeamBuildingEntities.Classes.ToList()[i]);
+            //TeamBuildingEntities.Entry(TeamBuildingEntities.Users).State=EntityState.Modified;
             TeamBuildingEntities.SaveChanges();
         }
 
@@ -192,6 +197,7 @@ namespace TeamBuilding
                 NameField.Text = _user.Name;
                 SurNameField.Text = _user.LastName;
                 EmailField.Text = _user.RegMail;
+                BioField.Text = _user.Bio;
                 ClassList.Items.Clear();
                 foreach (var clas in TeamBuildingEntities.Classes)
                 {

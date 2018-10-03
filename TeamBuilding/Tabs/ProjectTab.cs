@@ -11,7 +11,7 @@ namespace TeamBuilding
 {
     public partial class ProjectTab : UserControl
     {
-        public TeamBuildingEntities TeamBuildingEntities = new TeamBuildingEntities();
+        public TeamBuildingEntities TeamBuildingEntities =Connection.Instance();
         public ObservableCollection<Users> UsersList;
 
         private static ProjectTab _instance;

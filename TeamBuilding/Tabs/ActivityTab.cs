@@ -8,7 +8,7 @@ namespace TeamBuilding.Tabs
 {
     public partial class ActivityTab : UserControl
     {
-        public TeamBuildingEntities TeamBuildingEntities = new TeamBuildingEntities();
+        public TeamBuildingEntities TeamBuildingEntities =Connection.Instance();
         public ObservableCollection<Users> UsersList = new ObservableCollection<Users>();
         public ObservableCollection<LikedProjects> LikedProjects = new ObservableCollection<LikedProjects>();
         public Users _user = null;
