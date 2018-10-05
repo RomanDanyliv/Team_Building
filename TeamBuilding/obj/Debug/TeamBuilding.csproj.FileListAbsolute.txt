@@ -42,11 +42,8 @@ D:\OKRMyTEAM\OKRDAN\TeamBuilding\obj\Debug\TeamBuilding.Tabs.SearchTab.resources
 D:\OKRMyTEAM\OKRDAN\TeamBuilding\obj\Debug\TeamBuilding.csproj.GenerateResource.Cache
 D:\OKRMyTEAM\OKRDAN\TeamBuilding\obj\Debug\TeamBuilding.exe
 D:\OKRMyTEAM\OKRDAN\TeamBuilding\obj\Debug\TeamBuilding.pdb
-D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding_log.ldf
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.mdf
-D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.exe.config
-D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.exe
-D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.pdb
+D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding_log.ldf
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\EntityFramework.dll
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\EntityFramework.SqlServer.dll
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\EntityFramework.xml
@@ -64,3 +61,8 @@ D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.Tabs.SearchTab.resou
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.csproj.GenerateResource.Cache
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.exe
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.pdb
+D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.exe.config
+D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.exe
+D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.pdb
+D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.csprojResolveAssemblyReference.cache
+D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.Tabs.ProjectInfo.resources

@@ -24,6 +24,7 @@ namespace TeamBuilding.Tabs
         {
             try
             {
+                Counter = 0;
                 ProjectsList = new ObservableCollection<Projects>(TeamBuildingEntities.Projects);
                 var chosenProject = ProjectsList[0];
                 var thinButtonY = 325;
@@ -36,7 +37,7 @@ namespace TeamBuilding.Tabs
                 {
                     BunifuThinButton2 thinButton = new BunifuThinButton2 { Name = "thinButton" + i };
                     chosenProject = ProjectsList[Counter];
-                    thinButton.ButtonText = chosenProject.PrjtName;
+                    thinButton.ButtonText = chosenProject.PrjtName+Counter;
                     thinButton.Size = new Size(655, 55);
                     thinButton.IdleLineColor = Color.White;
                     thinButton.IdleCornerRadius = 1;
@@ -47,13 +48,15 @@ namespace TeamBuilding.Tabs
                     thinButton.ActiveForecolor = Color.FromArgb(12, 185, 102);
                     thinButton.TextAlign = ContentAlignment.MiddleLeft;
                     thinButton.Location = new Point(50, thinButtonY);
+                    thinButton.Tag =(object)ProjectsList[Counter];
                     thinButtonY += 400;
+                    thinButton.Click += GetProfileInfo;
                     thinButton.Font = new Font("Century Gothic", 12);
 
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
-                    pictureBox.Size = new Size(655, 250);
-                    pictureBox.Location = new Point(50, pictureBoxY);
+                    pictureBox.Size = new Size(450, 250);
+                    pictureBox.Location = new Point(150, pictureBoxY);
                     if (File.Exists(@"Pictures\" + chosenProject.PrjtImagePath))
                     pictureBox.Image = new Bitmap(@"Pictures\" + chosenProject.PrjtImagePath);
                     else pictureBox.Image = new Bitmap(@"Pictures\default.jpg");
@@ -95,6 +98,17 @@ namespace TeamBuilding.Tabs
             {
                 MessageBox.Show(exception.ToString());
             }
+        }
+
+        private void GetProfileInfo(object sender, object e)
+        {
+            ProjectInfo tab = new ProjectInfo();
+            tab.Visible = true;
+            tab.LoadProjectData((Projects)(sender as BunifuThinButton2).Tag,this);
+            Controls.Clear();
+            Controls.Add(tab);
+            tab.Dock = DockStyle.Fill;
+            tab.BringToFront();
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProjectTab));
             this.panel1 = new System.Windows.Forms.Panel();
             this.NameField = new ns1.BunifuMetroTextbox();
@@ -38,7 +38,6 @@
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.bunifuThinButton21 = new ns1.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.DescriptionField = new ns1.BunifuMetroTextbox();
             this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuThinButton22 = new ns1.BunifuThinButton2();
@@ -56,6 +55,7 @@
             this.bunifuThinButton24 = new ns1.BunifuThinButton2();
             this.bunifuCustomLabel7 = new ns1.BunifuCustomLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.DescriptionField = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -169,25 +169,6 @@
             this.panel2.TabIndex = 14;
             this.panel2.Visible = false;
             // 
-            // DescriptionField
-            // 
-            this.DescriptionField.BackColor = System.Drawing.Color.White;
-            this.DescriptionField.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(185)))), ((int)(((byte)(102)))));
-            this.DescriptionField.BorderColorIdle = System.Drawing.Color.Gray;
-            this.DescriptionField.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(185)))), ((int)(((byte)(102)))));
-            this.DescriptionField.BorderThickness = 2;
-            this.DescriptionField.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTransition1.SetDecoration(this.DescriptionField, BunifuAnimatorNS.DecorationType.None);
-            this.DescriptionField.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DescriptionField.ForeColor = System.Drawing.Color.Black;
-            this.DescriptionField.isPassword = false;
-            this.DescriptionField.Location = new System.Drawing.Point(105, 65);
-            this.DescriptionField.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.DescriptionField.Name = "DescriptionField";
-            this.DescriptionField.Size = new System.Drawing.Size(440, 175);
-            this.DescriptionField.TabIndex = 9;
-            this.DescriptionField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
@@ -204,22 +185,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.bunifuTransition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // bunifuThinButton22
             // 
@@ -459,6 +440,16 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // DescriptionField
+            // 
+            this.bunifuTransition1.SetDecoration(this.DescriptionField, BunifuAnimatorNS.DecorationType.None);
+            this.DescriptionField.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.DescriptionField.Location = new System.Drawing.Point(105, 75);
+            this.DescriptionField.Name = "DescriptionField";
+            this.DescriptionField.Size = new System.Drawing.Size(440, 189);
+            this.DescriptionField.TabIndex = 9;
+            this.DescriptionField.Text = "";
+            // 
             // ProjectTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -501,7 +492,6 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel3;
         private ns1.BunifuMetroTextbox NameField;
         private System.Windows.Forms.Panel panel2;
-        private ns1.BunifuMetroTextbox DescriptionField;
         private ns1.BunifuCustomLabel bunifuCustomLabel4;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
         private ns1.BunifuThinButton2 bunifuThinButton22;
@@ -519,5 +509,6 @@
         private ns1.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.ListBox SkillList;
         private ns1.BunifuThinButton2 bunifuThinButton25;
+        private System.Windows.Forms.RichTextBox DescriptionField;
     }
 }

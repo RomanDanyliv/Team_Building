@@ -162,6 +162,7 @@ namespace TeamBuilding
             for (int i = 0; i < ClassList.Items.Count; i++)
                 if (ClassList.GetItemChecked(i))
                     _user.Classes.Add(TeamBuildingEntities.Classes.ToList()[i]);
+            TeamBuildingEntities.Entry(TeamBuildingEntities.Users).State=EntityState.Modified;
             TeamBuildingEntities.SaveChanges();
         }
 
