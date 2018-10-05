@@ -15,7 +15,7 @@ namespace TeamBuilding
 
         public StartUp()
         {
-            InitializeComponent();  
+            InitializeComponent();
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
@@ -34,6 +34,7 @@ namespace TeamBuilding
                     slideB.Left = 10;
 
                     bunifuTransition1.ShowSync(slideB);
+                    SignEmailField.Focus();
                 }
             }
 
@@ -59,6 +60,7 @@ namespace TeamBuilding
                     slideA.Left = 10;
 
                     bunifuTransition1.ShowSync(slideA);
+                    RegNameField.Focus();
                 }
             }
 

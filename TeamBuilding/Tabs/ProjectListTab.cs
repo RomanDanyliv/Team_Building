@@ -24,6 +24,7 @@ namespace TeamBuilding.Tabs
         {
             try
             {
+                Counter = 0;
                 ProjectsList = new ObservableCollection<Projects>(TeamBuildingEntities.Projects);
                 var chosenProject = ProjectsList[0];
                 var thinButtonY = 325;
@@ -47,13 +48,15 @@ namespace TeamBuilding.Tabs
                     thinButton.ActiveForecolor = Color.FromArgb(12, 185, 102);
                     thinButton.TextAlign = ContentAlignment.MiddleLeft;
                     thinButton.Location = new Point(50, thinButtonY);
+                    thinButton.Tag =(object)ProjectsList[Counter];
                     thinButtonY += 400;
+                    thinButton.Click += GetProfileInfo;
                     thinButton.Font = new Font("Century Gothic", 12);
 
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
-                    pictureBox.Size = new Size(655, 250);
-                    pictureBox.Location = new Point(50, pictureBoxY);
+                    pictureBox.Size = new Size(450, 250);
+                    pictureBox.Location = new Point(150, pictureBoxY);
                     if (File.Exists(@"Pictures\" + chosenProject.PrjtImagePath))
                     pictureBox.Image = new Bitmap(@"Pictures\" + chosenProject.PrjtImagePath);
                     else pictureBox.Image = new Bitmap(@"Pictures\default.jpg");
@@ -77,10 +80,10 @@ namespace TeamBuilding.Tabs
                     likeButton.Size = new Size(30, 30);
                     likeButton.BackColor = Color.Transparent;
                     likeButton.SizeMode = PictureBoxSizeMode.StretchImage;
-                    likeButton.Image = bunifuImageButton2.Image;
+                    likeButton.Image = NotLikedProject.Image;
                     likeButton.Location = new Point(675, likeButtonY);
                     likeButtonY += 400;
-                    likeButton.Click += new EventHandler(bunifuImageButton2_Click);
+                    likeButton.Click += new EventHandler(Like_project);
 
                     Controls.Add(thinButton);
                     Controls.Add(pictureBox);
@@ -97,18 +100,29 @@ namespace TeamBuilding.Tabs
             }
         }
 
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        private void GetProfileInfo(object sender, object e)
+        {
+            ProjectInfo tab = new ProjectInfo();
+            tab.Visible = true;
+            tab.LoadInfo((Projects)(sender as BunifuThinButton2).Tag,this);
+            Controls.Clear();
+            Controls.Add(tab);
+            tab.Dock = DockStyle.Fill;
+            tab.BringToFront();
+        }
+
+        private void Like_project(object sender, EventArgs e)
         {
             BunifuImageButton button = sender as BunifuImageButton;
 
             if (!Liked)
             {
-                button.Image = bunifuImageButton1.Image;
+                button.Image = LikedProject.Image;
                 Liked = true;
             }
             else
             {
-                button.Image = bunifuImageButton2.Image;
+                button.Image = NotLikedProject.Image;
                 Liked = false;
             }
         }

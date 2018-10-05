@@ -129,6 +129,12 @@
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Tabs\ProjectInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\ProjectInfo.Designer.cs">
+      <DependentUpon>ProjectInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tabs\SettingTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,11 +178,6 @@
     <Compile Include="Tabs\SearchTab.Designer.cs">
       <DependentUpon>SearchTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeamBuildingDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TeamBuildingDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -185,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\ProjectInfo.resx">
+      <DependentUpon>ProjectInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tabs\SettingTab.resx">
       <DependentUpon>SettingTab.cs</DependentUpon>
@@ -216,7 +220,9 @@
     <EmbeddedResource Include="Tabs\SearchTab.resx">
       <DependentUpon>SearchTab.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -234,17 +240,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TeamBuildingDataSet.xsc">
-      <DependentUpon>TeamBuildingDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="TeamBuildingDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TeamBuildingDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TeamBuildingDataSet.xss">
-      <DependentUpon>TeamBuildingDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -272,9 +267,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <EmbeddedResource Include="TeamBuilding.mdf">
+    <Content Include="TeamBuilding.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    </Content>
     <Content Include="TeamBuilding_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>TeamBuilding.mdf</DependentUpon>
