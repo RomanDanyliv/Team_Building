@@ -157,13 +157,13 @@
             this.NameBox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.NameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.NameBox.isPassword = false;
-            this.NameBox.Location = new System.Drawing.Point(188, 50);
+            this.NameBox.Location = new System.Drawing.Point(139, 50);
             this.NameBox.Margin = new System.Windows.Forms.Padding(4);
             this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(370, 44);
+            this.NameBox.Size = new System.Drawing.Size(459, 44);
             this.NameBox.TabIndex = 21;
-            this.NameBox.Text = "bunifuMetroTextbox1";
-            this.NameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.NameBox.Text = "bunifuMetroTexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxtbox1";
+            this.NameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ProjectInfo
             // 

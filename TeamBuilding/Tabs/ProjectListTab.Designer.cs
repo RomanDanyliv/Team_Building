@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProjectListTab));
             this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
-            this.bunifuImageButton2 = new ns1.BunifuImageButton();
-            this.bunifuImageButton1 = new ns1.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.NotLikedProject = new ns1.BunifuImageButton();
+            this.LikedProject = new ns1.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.NotLikedProject)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LikedProject)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -47,36 +47,36 @@
             this.bunifuCustomLabel1.TabIndex = 7;
             this.bunifuCustomLabel1.Text = "All projects";
             // 
-            // bunifuImageButton2
+            // NotLikedProject
             // 
-            this.bunifuImageButton2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(650, 15);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(30, 30);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuImageButton2.TabIndex = 8;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Visible = false;
-            this.bunifuImageButton2.Zoom = 15;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            this.NotLikedProject.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.NotLikedProject.BackColor = System.Drawing.Color.Transparent;
+            this.NotLikedProject.Image = ((System.Drawing.Image)(resources.GetObject("NotLikedProject.Image")));
+            this.NotLikedProject.ImageActive = null;
+            this.NotLikedProject.Location = new System.Drawing.Point(650, 15);
+            this.NotLikedProject.Name = "NotLikedProject";
+            this.NotLikedProject.Size = new System.Drawing.Size(30, 30);
+            this.NotLikedProject.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NotLikedProject.TabIndex = 8;
+            this.NotLikedProject.TabStop = false;
+            this.NotLikedProject.Visible = false;
+            this.NotLikedProject.Zoom = 15;
+            this.NotLikedProject.Click += new System.EventHandler(this.Like_project);
             // 
-            // bunifuImageButton1
+            // LikedProject
             // 
-            this.bunifuImageButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(615, 15);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(30, 30);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuImageButton1.TabIndex = 9;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Visible = false;
-            this.bunifuImageButton1.Zoom = 15;
+            this.LikedProject.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.LikedProject.BackColor = System.Drawing.Color.Transparent;
+            this.LikedProject.Image = ((System.Drawing.Image)(resources.GetObject("LikedProject.Image")));
+            this.LikedProject.ImageActive = null;
+            this.LikedProject.Location = new System.Drawing.Point(615, 15);
+            this.LikedProject.Name = "LikedProject";
+            this.LikedProject.Size = new System.Drawing.Size(30, 30);
+            this.LikedProject.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LikedProject.TabIndex = 9;
+            this.LikedProject.TabStop = false;
+            this.LikedProject.Visible = false;
+            this.LikedProject.Zoom = 15;
             // 
             // ProjectListTab
             // 
@@ -85,13 +85,13 @@
             this.AutoScroll = true;
             this.AutoScrollMinSize = new System.Drawing.Size(1, 1);
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.bunifuImageButton1);
-            this.Controls.Add(this.bunifuImageButton2);
+            this.Controls.Add(this.LikedProject);
+            this.Controls.Add(this.NotLikedProject);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "ProjectListTab";
             this.Size = new System.Drawing.Size(700, 983);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NotLikedProject)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LikedProject)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,7 +99,7 @@
         #endregion
 
         private ns1.BunifuCustomLabel bunifuCustomLabel1;
-        private ns1.BunifuImageButton bunifuImageButton2;
-        private ns1.BunifuImageButton bunifuImageButton1;
+        private ns1.BunifuImageButton NotLikedProject;
+        private ns1.BunifuImageButton LikedProject;
     }
 }

@@ -10,22 +10,34 @@ namespace TeamBuilding.Tabs
         public TeamBuildingEntities TeamBuildingEntities = new TeamBuildingEntities();
         public ObservableCollection<Users> UsersList;
         public Projects _project = null;
-        public ProjectListTab _tab = null;
+        public ProjectListTab _Project_tab = null;
+        public SearchTab _Search_tab = null;
 
         public ProjectInfo()
         {
             InitializeComponent();
         }
 
-        public bool LoadProjectData(Projects project, ProjectListTab tab)
+        public void LoadInfo(Projects project, ProjectListTab tab)
+        {
+            _Project_tab = tab;
+            _project = project;
+            LoadProjectData();
+        }
+        public void LoadInfo(Projects project, SearchTab tab)
+        {
+            _Search_tab = tab;
+            _project = project;
+            LoadProjectData();
+        }
+
+        public bool LoadProjectData()
         {
             try
             {
-                _tab = tab;
-                _project = project;
                 picture.Image = new Bitmap(@"Pictures\" + _project.PrjtImagePath);
-                NameBox.Text = project.PrjtName;
-                CreatedBox.Text = "Created: " + project.PrjtCreated;
+                NameBox.Text = _project.PrjtName;
+                CreatedBox.Text = "Created: " + _project.PrjtCreated;
                 DescriptionField.Text = _project.PrjtDescription;
                 ClassList.Items.Clear();
                 foreach (var Class in _project.PrjtClasses)
@@ -50,8 +62,15 @@ namespace TeamBuilding.Tabs
 
         private void CloseButton_Click(object sender, EventArgs e)
         {
-            _tab.Controls.Clear();
-            _tab.ShowProjects();
+            if (_Project_tab != null)
+            {
+                _Project_tab.Controls.Clear();
+                _Project_tab.ShowProjects();
+            }
+            if (_Search_tab != null)
+            {
+                _Search_tab.Controls.Remove(this);
+            }
             Visible = false;
         }
     }

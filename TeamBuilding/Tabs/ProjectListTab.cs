@@ -37,7 +37,7 @@ namespace TeamBuilding.Tabs
                 {
                     BunifuThinButton2 thinButton = new BunifuThinButton2 { Name = "thinButton" + i };
                     chosenProject = ProjectsList[Counter];
-                    thinButton.ButtonText = chosenProject.PrjtName+Counter;
+                    thinButton.ButtonText = chosenProject.PrjtName;
                     thinButton.Size = new Size(655, 55);
                     thinButton.IdleLineColor = Color.White;
                     thinButton.IdleCornerRadius = 1;
@@ -80,10 +80,10 @@ namespace TeamBuilding.Tabs
                     likeButton.Size = new Size(30, 30);
                     likeButton.BackColor = Color.Transparent;
                     likeButton.SizeMode = PictureBoxSizeMode.StretchImage;
-                    likeButton.Image = bunifuImageButton2.Image;
+                    likeButton.Image = NotLikedProject.Image;
                     likeButton.Location = new Point(675, likeButtonY);
                     likeButtonY += 400;
-                    likeButton.Click += new EventHandler(bunifuImageButton2_Click);
+                    likeButton.Click += new EventHandler(Like_project);
 
                     Controls.Add(thinButton);
                     Controls.Add(pictureBox);
@@ -104,25 +104,25 @@ namespace TeamBuilding.Tabs
         {
             ProjectInfo tab = new ProjectInfo();
             tab.Visible = true;
-            tab.LoadProjectData((Projects)(sender as BunifuThinButton2).Tag,this);
+            tab.LoadInfo((Projects)(sender as BunifuThinButton2).Tag,this);
             Controls.Clear();
             Controls.Add(tab);
             tab.Dock = DockStyle.Fill;
             tab.BringToFront();
         }
 
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        private void Like_project(object sender, EventArgs e)
         {
             BunifuImageButton button = sender as BunifuImageButton;
 
             if (!Liked)
             {
-                button.Image = bunifuImageButton1.Image;
+                button.Image = LikedProject.Image;
                 Liked = true;
             }
             else
             {
-                button.Image = bunifuImageButton2.Image;
+                button.Image = NotLikedProject.Image;
                 Liked = false;
             }
         }

@@ -64,5 +64,4 @@ D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.pdb
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.exe.config
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.exe
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.pdb
-D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.csprojResolveAssemblyReference.cache
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.Tabs.ProjectInfo.resources
