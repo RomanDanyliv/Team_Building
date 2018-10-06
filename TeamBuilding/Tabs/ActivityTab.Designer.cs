@@ -47,11 +47,11 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(325, 25);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(263, 23);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(81, 22);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(187, 22);
             this.bunifuCustomLabel1.TabIndex = 8;
-            this.bunifuCustomLabel1.Text = "Activity";
+            this.bunifuCustomLabel1.Text = "Остання активність";
             // 
             // bunifuCustomLabel3
             // 
@@ -60,9 +60,9 @@
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(50, 65);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(136, 21);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(281, 21);
             this.bunifuCustomLabel3.TabIndex = 10;
-            this.bunifuCustomLabel3.Text = "Joined projects: ";
+            this.bunifuCustomLabel3.Text = "Проекти, у яких я приймаю участь:";
             // 
             // listBox1
             // 
@@ -85,7 +85,7 @@
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
             this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Leave project";
+            this.bunifuThinButton21.ButtonText = "Залишити проект";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
@@ -111,7 +111,7 @@
             this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
             this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Edit";
+            this.bunifuThinButton22.ButtonText = "Редагувати";
             this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
@@ -147,9 +147,9 @@
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(50, 275);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(151, 21);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(182, 21);
             this.bunifuCustomLabel2.TabIndex = 14;
-            this.bunifuCustomLabel2.Text = "Created projects: ";
+            this.bunifuCustomLabel2.Text = "Проекти, які я створив:";
             // 
             // bunifuThinButton23
             // 
@@ -160,7 +160,7 @@
             this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
             this.bunifuThinButton23.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "Delete";
+            this.bunifuThinButton23.ButtonText = "Видалити";
             this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
@@ -186,7 +186,7 @@
             this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
             this.bunifuThinButton25.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
-            this.bunifuThinButton25.ButtonText = "Unlike";
+            this.bunifuThinButton25.ButtonText = "Не сподобалося....";
             this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton25.ForeColor = System.Drawing.Color.SeaGreen;
@@ -221,9 +221,9 @@
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(50, 490);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(123, 21);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(258, 21);
             this.bunifuCustomLabel4.TabIndex = 18;
-            this.bunifuCustomLabel4.Text = "Liked projects: ";
+            this.bunifuCustomLabel4.Text = "Проекти, які мені сподобалися:";
             // 
             // ActivityTab
             // 

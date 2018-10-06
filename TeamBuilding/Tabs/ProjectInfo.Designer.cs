@@ -65,11 +65,11 @@
             this.DescriptionBox.AutoSize = true;
             this.DescriptionBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DescriptionBox.ForeColor = System.Drawing.Color.Black;
-            this.DescriptionBox.Location = new System.Drawing.Point(302, 372);
+            this.DescriptionBox.Location = new System.Drawing.Point(355, 374);
             this.DescriptionBox.Name = "DescriptionBox";
-            this.DescriptionBox.Size = new System.Drawing.Size(113, 23);
+            this.DescriptionBox.Size = new System.Drawing.Size(60, 23);
             this.DescriptionBox.TabIndex = 14;
-            this.DescriptionBox.Text = "Description";
+            this.DescriptionBox.Text = "Опис";
             // 
             // ClassList
             // 
@@ -94,20 +94,20 @@
             this.NeedBox.ForeColor = System.Drawing.Color.Black;
             this.NeedBox.Location = new System.Drawing.Point(144, 584);
             this.NeedBox.Name = "NeedBox";
-            this.NeedBox.Size = new System.Drawing.Size(97, 23);
+            this.NeedBox.Size = new System.Drawing.Size(140, 23);
             this.NeedBox.TabIndex = 17;
-            this.NeedBox.Text = "We need:";
+            this.NeedBox.Text = "Нам потрібні:";
             // 
             // SkillsBox
             // 
             this.SkillsBox.AutoSize = true;
             this.SkillsBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SkillsBox.ForeColor = System.Drawing.Color.Black;
-            this.SkillsBox.Location = new System.Drawing.Point(441, 584);
+            this.SkillsBox.Location = new System.Drawing.Point(420, 584);
             this.SkillsBox.Name = "SkillsBox";
-            this.SkillsBox.Size = new System.Drawing.Size(145, 23);
+            this.SkillsBox.Size = new System.Drawing.Size(190, 23);
             this.SkillsBox.TabIndex = 18;
-            this.SkillsBox.Text = "Required skills:";
+            this.SkillsBox.Text = "Необхідні навички:";
             // 
             // CreatedBox
             // 
@@ -129,7 +129,7 @@
             this.CloseButton.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
             this.CloseButton.BackColor = System.Drawing.Color.White;
             this.CloseButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CloseButton.BackgroundImage")));
-            this.CloseButton.ButtonText = "Close";
+            this.CloseButton.ButtonText = "Вихід";
             this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseButton.ForeColor = System.Drawing.Color.SeaGreen;

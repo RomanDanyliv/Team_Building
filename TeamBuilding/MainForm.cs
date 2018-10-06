@@ -200,7 +200,6 @@ namespace TeamBuilding
             try
             {
                 _currentControl.Visible = false;
-                ProjectTab.Instance.Visible = false;
                 profileTab1.LoadUserData(_currentUser);
                 profileTab1.Visible = true;
                 _currentControl = profileTab1;

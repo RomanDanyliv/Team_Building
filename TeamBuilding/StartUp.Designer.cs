@@ -86,7 +86,7 @@
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(80)))), ((int)(((byte)(86)))));
             this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Sign Up";
+            this.bunifuThinButton21.ButtonText = "Реєстрація";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.bunifuThinButton21, BunifuAnimatorNS.DecorationType.None);
             this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,7 +113,7 @@
             this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(80)))), ((int)(((byte)(86)))));
             this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Log In";
+            this.bunifuThinButton22.ButtonText = "Увійти";
             this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.bunifuThinButton22, BunifuAnimatorNS.DecorationType.None);
             this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,7 +123,7 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(180, 55);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(194, 55);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(100, 50);
@@ -140,7 +140,7 @@
             this.RegButton.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(200)))), ((int)(((byte)(117)))));
             this.RegButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.RegButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RegButton.BackgroundImage")));
-            this.RegButton.ButtonText = "Sign Up";
+            this.RegButton.ButtonText = "Зареєструватися";
             this.RegButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.RegButton, BunifuAnimatorNS.DecorationType.None);
             this.RegButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,7 +167,7 @@
             this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(95)))), ((int)(((byte)(101)))));
             this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "Exit";
+            this.bunifuThinButton24.ButtonText = "Вихід";
             this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
             this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,11 +244,11 @@
             this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.Red;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(165, 145);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(204, 145);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(143, 17);
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(104, 17);
             this.bunifuCustomLabel10.TabIndex = 15;
-            this.bunifuCustomLabel10.Text = "Password is not valid";
+            this.bunifuCustomLabel10.Text = "ПЕРЕВІРТЕ ДАНІ";
             this.toolTip1.SetToolTip(this.bunifuCustomLabel10, "Password must contain at least one upper case character, one special character or" +
         " number and should not be longer than 15 characters.");
             this.bunifuCustomLabel10.Visible = false;
@@ -259,11 +259,11 @@
             this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.Red;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(190, 80);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(204, 80);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(117, 17);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(104, 17);
             this.bunifuCustomLabel9.TabIndex = 14;
-            this.bunifuCustomLabel9.Text = "Email is not valid";
+            this.bunifuCustomLabel9.Text = "ПЕРЕВІРТЕ ДАНІ";
             this.toolTip1.SetToolTip(this.bunifuCustomLabel9, "Email should be a valid account.");
             this.bunifuCustomLabel9.Visible = false;
             // 
@@ -273,11 +273,11 @@
             this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel6, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.Red;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(185, 15);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(204, 15);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(122, 17);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(104, 17);
             this.bunifuCustomLabel6.TabIndex = 13;
-            this.bunifuCustomLabel6.Text = "Name is not valid";
+            this.bunifuCustomLabel6.Text = "ПЕРЕВІРТЕ ДАНІ";
             this.toolTip1.SetToolTip(this.bunifuCustomLabel6, "Name should contain at least 6 characters and not be longer than 15 characters.");
             this.bunifuCustomLabel6.Visible = false;
             // 
@@ -304,9 +304,9 @@
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.DarkGray;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(20, 225);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(202, 17);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(193, 17);
             this.bunifuCustomLabel5.TabIndex = 11;
-            this.bunifuCustomLabel5.Text = "Receive our weekly newsletter";
+            this.bunifuCustomLabel5.Text = "Отримувати розсилку новин";
             // 
             // bunifuCustomLabel4
             // 
@@ -316,9 +316,9 @@
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.DarkGray;
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(20, 145);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(69, 17);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(57, 17);
             this.bunifuCustomLabel4.TabIndex = 10;
-            this.bunifuCustomLabel4.Text = "Password";
+            this.bunifuCustomLabel4.Text = "Пароль";
             // 
             // RegPasswordField
             // 
@@ -348,9 +348,9 @@
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.DarkGray;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(20, 80);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(96, 17);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(93, 17);
             this.bunifuCustomLabel3.TabIndex = 8;
-            this.bunifuCustomLabel3.Text = "Email address";
+            this.bunifuCustomLabel3.Text = "E-mail адрес";
             // 
             // RegEmailField
             // 
@@ -380,9 +380,9 @@
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.DarkGray;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(20, 15);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(70, 17);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(75, 17);
             this.bunifuCustomLabel2.TabIndex = 6;
-            this.bunifuCustomLabel2.Text = "Full name";
+            this.bunifuCustomLabel2.Text = "Повне ім\'я";
             // 
             // slideB
             // 
@@ -408,7 +408,7 @@
             this.bunifuThinButton27.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.bunifuThinButton27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuThinButton27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton27.BackgroundImage")));
-            this.bunifuThinButton27.ButtonText = "Forgot your password?";
+            this.bunifuThinButton27.ButtonText = "Я забув\\ла пароль...";
             this.bunifuThinButton27.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.bunifuThinButton27, BunifuAnimatorNS.DecorationType.None);
             this.bunifuThinButton27.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -434,7 +434,7 @@
             this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(95)))), ((int)(((byte)(101)))));
             this.bunifuThinButton25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
-            this.bunifuThinButton25.ButtonText = "Exit";
+            this.bunifuThinButton25.ButtonText = "Вихід";
             this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.bunifuThinButton25, BunifuAnimatorNS.DecorationType.None);
             this.bunifuThinButton25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -460,9 +460,9 @@
             this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.DarkGray;
             this.bunifuCustomLabel7.Location = new System.Drawing.Point(20, 105);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(69, 17);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(57, 17);
             this.bunifuCustomLabel7.TabIndex = 10;
-            this.bunifuCustomLabel7.Text = "Password";
+            this.bunifuCustomLabel7.Text = "Пароль";
             // 
             // LoginButton
             // 
@@ -473,7 +473,7 @@
             this.LoginButton.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(200)))), ((int)(((byte)(117)))));
             this.LoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.LoginButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LoginButton.BackgroundImage")));
-            this.LoginButton.ButtonText = "Login";
+            this.LoginButton.ButtonText = "Увійти";
             this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.LoginButton, BunifuAnimatorNS.DecorationType.None);
             this.LoginButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -518,9 +518,9 @@
             this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.DarkGray;
             this.bunifuCustomLabel8.Location = new System.Drawing.Point(20, 40);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(96, 17);
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(93, 17);
             this.bunifuCustomLabel8.TabIndex = 8;
-            this.bunifuCustomLabel8.Text = "Email address";
+            this.bunifuCustomLabel8.Text = "E-mail адрес";
             // 
             // SignEmailField
             // 
@@ -575,7 +575,7 @@
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // Form1
+            // StartUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -589,7 +589,7 @@
             this.Controls.Add(this.bunifuThinButton21);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "StartUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.slideA.ResumeLayout(false);

@@ -85,7 +85,7 @@
             this.SearchField.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.SearchField.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.SearchField.HintForeColor = System.Drawing.Color.Empty;
-            this.SearchField.HintText = "Search...";
+            this.SearchField.HintText = "Пошук...";
             this.SearchField.isPassword = false;
             this.SearchField.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
             this.SearchField.LineIdleColor = System.Drawing.Color.Gray;

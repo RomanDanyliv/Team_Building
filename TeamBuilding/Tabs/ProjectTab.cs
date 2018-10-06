@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using TeamBuilding.Tabs;
 
 namespace TeamBuilding
 {
@@ -19,19 +20,21 @@ namespace TeamBuilding
         private String _imagePath = "";
         private Projects ExistedProject = null;
         private Projects _newProject;
+        private ProfileTab _tab;
 
-        public static ProjectTab Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new ProjectTab();
-                return _instance;
-            }
-        }
+//        public static ProjectTab Instance
+//        {
+//            get
+//            {
+//                if (_instance == null)
+//                    _instance = new ProjectTab(TODO);
+//                return _instance;
+//            }
+//        }
 
-        public ProjectTab()
+        public ProjectTab(ProfileTab tab)
         {
+            _tab = tab;
             InitializeComponent();
             _currentPanel = panel1;
         }
@@ -285,6 +288,11 @@ namespace TeamBuilding
                 SkillList.Items.RemoveAt(SkillList.SelectedIndex);
                 SkillList.SelectedIndex = -1;
             }
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            Visible = false;
         }
     }
 }

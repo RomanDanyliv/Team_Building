@@ -38,9 +38,9 @@
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(300, 25);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(110, 22);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(91, 22);
             this.bunifuCustomLabel1.TabIndex = 7;
-            this.bunifuCustomLabel1.Text = "Categories";
+            this.bunifuCustomLabel1.Text = "Категорії";
             // 
             // CategoriesTab
             // 

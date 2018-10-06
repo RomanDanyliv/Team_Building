@@ -67,7 +67,7 @@ namespace TeamBuilding.Tabs
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-            ProjectTab tab=new ProjectTab();
+            ProjectTab tab = new ProjectTab(this);
             tab.Visible = true;
             tab.StartInfo();
             Controls.Add(tab);

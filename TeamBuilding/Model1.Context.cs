@@ -12,7 +12,7 @@ namespace TeamBuilding
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class TeamBuildingEntities : DbContext
     {
         public TeamBuildingEntities()
