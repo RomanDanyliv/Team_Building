@@ -21,10 +21,10 @@ namespace TeamBuilding.Tabs
             try
             {
                 _user = user;
-                pictureBox1.Image = new Bitmap(@"Pictures\" + _user.PicturePath);
-                bunifuCustomLabel2.Text = _user.Name+" "+_user.LastName;
-                bunifuCustomLabel3.Text = "Joined: " + _user.Registered;
-                bunifuCustomLabel4.Text = "Project counter: " + _user.Projects1.Count;
+                Avatar.Image = new Bitmap(@"Pictures\" + _user.PicturePath);
+                UserName.Text = _user.Name+" "+_user.LastName;
+                JoinIn.Text = "Joined: " + _user.Registered;
+                MyProjects.Text = "Project counter: " + _user.Projects1.Count;
                 BioField.Text = _user.Bio;
                 ClassList.Items.Clear();
                 foreach (var Class in _user.Classes)
@@ -41,19 +41,19 @@ namespace TeamBuilding.Tabs
                     var userContacts = user.Contacts;
                     {
                         if (userContacts.PublicMail != null)
-                            bunifuCustomLabel5.Text = "Contacts: Email: " + userContacts.PublicMail + "; ";
+                            Contacts.Text = "Contacts: Email: " + userContacts.PublicMail + "; ";
                         if (userContacts.Facebook != null)
-                            bunifuCustomLabel5.Text += "Facebook: " + userContacts.Facebook + "; ";
+                            Contacts.Text += "Facebook: " + userContacts.Facebook + "; ";
                         if (userContacts.VKId != null)
-                            bunifuCustomLabel5.Text += "VK: " + userContacts.VKId + "; ";
+                            Contacts.Text += "VK: " + userContacts.VKId + "; ";
                         if (userContacts.Linkedin != null)
-                            bunifuCustomLabel5.Text += "LinkedIn: " + userContacts.Linkedin + "; ";
+                            Contacts.Text += "LinkedIn: " + userContacts.Linkedin + "; ";
                     }
                 }
 
                 catch (Exception)
                 {
-                    bunifuCustomLabel5.Text = "Contacts: none";
+                    Contacts.Text = "Contacts: none";
                 }
             }
 
@@ -63,6 +63,13 @@ namespace TeamBuilding.Tabs
             }
 
             return true;
+        }
+
+        public void LoadInfo(Users tag, UserListTab userListTab)
+        {
+            LoadUserData(tag);
+            Settings.Visible = false;
+            CreateProject.Visible = false;
         }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)

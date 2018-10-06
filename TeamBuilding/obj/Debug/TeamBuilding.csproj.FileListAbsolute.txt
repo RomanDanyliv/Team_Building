@@ -22,3 +22,4 @@ D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.csproj.GenerateResou
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.csproj.CoreCompileInputs.cache
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.exe
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.pdb
+D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.Tabs.UserListTab.resources

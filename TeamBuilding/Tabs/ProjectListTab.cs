@@ -26,7 +26,7 @@ namespace TeamBuilding.Tabs
             {
                 Counter = 0;
                 ProjectsList = new ObservableCollection<Projects>(TeamBuildingEntities.Projects);
-                var chosenProject = ProjectsList[0];
+                Projects chosenProject = null;
                 var thinButtonY = 325;
                 var pictureBoxY = 75;
                 var separatorY = 375;

@@ -229,5 +229,23 @@ namespace TeamBuilding
 
             _templates.Add(template);
         }
+
+        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _currentControl.Visible = false;
+                userListTab1.ShowUsers();
+                userListTab1.Visible = true;
+                _currentControl = userListTab1;
+                Loading();
+                userListTab1.Counter = 0;
+            }
+
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.ToString());
+            }
+        }
     }
 }

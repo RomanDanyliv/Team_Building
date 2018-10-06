@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data.Entity;
 using System.Data.Entity.Validation;
 using System.Drawing;
 using System.IO;
@@ -12,7 +13,7 @@ namespace TeamBuilding
 {
     public partial class ProjectTab : UserControl
     {
-        public TeamBuildingEntities TeamBuildingEntities =Connection.Instance();
+        public TeamBuildingEntities TeamBuildingEntities = Connection.Instance();
         public ObservableCollection<Users> UsersList;
 
         private static ProjectTab _instance;
@@ -22,15 +23,15 @@ namespace TeamBuilding
         private Projects _newProject;
         private ProfileTab _tab;
 
-//        public static ProjectTab Instance
-//        {
-//            get
-//            {
-//                if (_instance == null)
-//                    _instance = new ProjectTab(TODO);
-//                return _instance;
-//            }
-//        }
+        //        public static ProjectTab Instance
+        //        {
+        //            get
+        //            {
+        //                if (_instance == null)
+        //                    _instance = new ProjectTab(TODO);
+        //                return _instance;
+        //            }
+        //        }
 
         public ProjectTab(ProfileTab tab)
         {
@@ -170,8 +171,10 @@ namespace TeamBuilding
                 int projectId;
                 if (ExistedProject == null)
                 {
-                    projectId =
-                        TeamBuildingEntities.Projects.ToList()[TeamBuildingEntities.Projects.Count() - 1].PrjtId + 1;
+
+                    var project =
+                        TeamBuildingEntities.Projects.FirstOrDefaultAsync();
+                    projectId = (project.Result == null) ? 0 : project.Id;
                 }
                 else
                     projectId = ExistedProject.PrjtId;
@@ -242,13 +245,13 @@ namespace TeamBuilding
                             Classes = TeamBuildingEntities.Classes.ToList()[i],
                             Projects = _newProject
                         });
+                TeamBuildingEntities.SaveChanges();
             }
 
             catch (Exception exception)
             {
                 MessageBox.Show(exception.ToString());
             }
-
             return _newProject;
         }
 

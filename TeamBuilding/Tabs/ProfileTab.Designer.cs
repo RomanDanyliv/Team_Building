@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileTab));
             this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
-            this.bunifuThinButton21 = new ns1.BunifuThinButton2();
-            this.bunifuThinButton22 = new ns1.BunifuThinButton2();
-            this.bunifuThinButton23 = new ns1.BunifuThinButton2();
+            this.Avatar = new System.Windows.Forms.PictureBox();
+            this.UserName = new ns1.BunifuCustomLabel();
+            this.JoinIn = new ns1.BunifuCustomLabel();
+            this.MyProjects = new ns1.BunifuCustomLabel();
+            this.Contacts = new ns1.BunifuCustomLabel();
+            this.Messages = new ns1.BunifuThinButton2();
+            this.Settings = new ns1.BunifuThinButton2();
+            this.CreateProject = new ns1.BunifuThinButton2();
             this.BioField = new System.Windows.Forms.RichTextBox();
-            this.bunifuCustomLabel6 = new ns1.BunifuCustomLabel();
+            this.AboutLabel = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new ns1.BunifuCustomLabel();
             this.ClassList = new System.Windows.Forms.ListBox();
             this.SkillsList = new System.Windows.Forms.ListBox();
             this.bunifuCustomLabel8 = new ns1.BunifuCustomLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -58,135 +58,135 @@
             this.bunifuCustomLabel1.TabIndex = 6;
             this.bunifuCustomLabel1.Text = "ПРОФІЛЬ";
             // 
-            // pictureBox1
+            // Avatar
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(105, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.Avatar.Location = new System.Drawing.Point(105, 65);
+            this.Avatar.Name = "Avatar";
+            this.Avatar.Size = new System.Drawing.Size(200, 200);
+            this.Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Avatar.TabIndex = 7;
+            this.Avatar.TabStop = false;
             // 
-            // bunifuCustomLabel2
+            // UserName
             // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(325, 65);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(44, 22);
-            this.bunifuCustomLabel2.TabIndex = 8;
-            this.bunifuCustomLabel2.Text = "Ім\'я";
+            this.UserName.AutoSize = true;
+            this.UserName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UserName.ForeColor = System.Drawing.Color.Black;
+            this.UserName.Location = new System.Drawing.Point(325, 65);
+            this.UserName.Name = "UserName";
+            this.UserName.Size = new System.Drawing.Size(44, 22);
+            this.UserName.TabIndex = 8;
+            this.UserName.Text = "Ім\'я";
             // 
-            // bunifuCustomLabel3
+            // JoinIn
             // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(325, 100);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(110, 21);
-            this.bunifuCustomLabel3.TabIndex = 9;
-            this.bunifuCustomLabel3.Text = "Приєднався:";
+            this.JoinIn.AutoSize = true;
+            this.JoinIn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.JoinIn.ForeColor = System.Drawing.Color.Black;
+            this.JoinIn.Location = new System.Drawing.Point(325, 100);
+            this.JoinIn.Name = "JoinIn";
+            this.JoinIn.Size = new System.Drawing.Size(110, 21);
+            this.JoinIn.TabIndex = 9;
+            this.JoinIn.Text = "Приєднався:";
             // 
-            // bunifuCustomLabel4
+            // MyProjects
             // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(325, 135);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(111, 21);
-            this.bunifuCustomLabel4.TabIndex = 10;
-            this.bunifuCustomLabel4.Text = "Мої проекти:";
+            this.MyProjects.AutoSize = true;
+            this.MyProjects.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MyProjects.ForeColor = System.Drawing.Color.Black;
+            this.MyProjects.Location = new System.Drawing.Point(325, 135);
+            this.MyProjects.Name = "MyProjects";
+            this.MyProjects.Size = new System.Drawing.Size(111, 21);
+            this.MyProjects.TabIndex = 10;
+            this.MyProjects.Text = "Мої проекти:";
             // 
-            // bunifuCustomLabel5
+            // Contacts
             // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(117, 502);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(84, 21);
-            this.bunifuCustomLabel5.TabIndex = 11;
-            this.bunifuCustomLabel5.Text = "Контакти:";
+            this.Contacts.AutoSize = true;
+            this.Contacts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Contacts.ForeColor = System.Drawing.Color.Black;
+            this.Contacts.Location = new System.Drawing.Point(117, 502);
+            this.Contacts.Name = "Contacts";
+            this.Contacts.Size = new System.Drawing.Size(84, 21);
+            this.Contacts.TabIndex = 11;
+            this.Contacts.Text = "Контакти:";
             // 
-            // bunifuThinButton21
+            // Messages
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 1;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Повідомлення";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 1;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(105, 280);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(200, 40);
-            this.bunifuThinButton21.TabIndex = 12;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Messages.ActiveBorderThickness = 1;
+            this.Messages.ActiveCornerRadius = 1;
+            this.Messages.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.Messages.ActiveForecolor = System.Drawing.Color.White;
+            this.Messages.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.Messages.BackColor = System.Drawing.Color.White;
+            this.Messages.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Messages.BackgroundImage")));
+            this.Messages.ButtonText = "Повідомлення";
+            this.Messages.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Messages.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Messages.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Messages.IdleBorderThickness = 1;
+            this.Messages.IdleCornerRadius = 1;
+            this.Messages.IdleFillColor = System.Drawing.Color.White;
+            this.Messages.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.Messages.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.Messages.Location = new System.Drawing.Point(105, 280);
+            this.Messages.Margin = new System.Windows.Forms.Padding(5);
+            this.Messages.Name = "Messages";
+            this.Messages.Size = new System.Drawing.Size(200, 40);
+            this.Messages.TabIndex = 12;
+            this.Messages.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuThinButton22
+            // Settings
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 1;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Змінити дані";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 1;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(105, 354);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(200, 40);
-            this.bunifuThinButton22.TabIndex = 13;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
+            this.Settings.ActiveBorderThickness = 1;
+            this.Settings.ActiveCornerRadius = 1;
+            this.Settings.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.Settings.ActiveForecolor = System.Drawing.Color.White;
+            this.Settings.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.Settings.BackColor = System.Drawing.Color.White;
+            this.Settings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Settings.BackgroundImage")));
+            this.Settings.ButtonText = "Змінити дані";
+            this.Settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Settings.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Settings.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Settings.IdleBorderThickness = 1;
+            this.Settings.IdleCornerRadius = 1;
+            this.Settings.IdleFillColor = System.Drawing.Color.White;
+            this.Settings.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.Settings.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.Settings.Location = new System.Drawing.Point(105, 354);
+            this.Settings.Margin = new System.Windows.Forms.Padding(5);
+            this.Settings.Name = "Settings";
+            this.Settings.Size = new System.Drawing.Size(200, 40);
+            this.Settings.TabIndex = 13;
+            this.Settings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Settings.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
-            // bunifuThinButton23
+            // CreateProject
             // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 1;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton23.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "Створити проект";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 1;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
-            this.bunifuThinButton23.Location = new System.Drawing.Point(105, 426);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(200, 40);
-            this.bunifuThinButton23.TabIndex = 14;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
+            this.CreateProject.ActiveBorderThickness = 1;
+            this.CreateProject.ActiveCornerRadius = 1;
+            this.CreateProject.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.CreateProject.ActiveForecolor = System.Drawing.Color.White;
+            this.CreateProject.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.CreateProject.BackColor = System.Drawing.Color.White;
+            this.CreateProject.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CreateProject.BackgroundImage")));
+            this.CreateProject.ButtonText = "Створити проект";
+            this.CreateProject.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CreateProject.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CreateProject.ForeColor = System.Drawing.Color.SeaGreen;
+            this.CreateProject.IdleBorderThickness = 1;
+            this.CreateProject.IdleCornerRadius = 1;
+            this.CreateProject.IdleFillColor = System.Drawing.Color.White;
+            this.CreateProject.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.CreateProject.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(175)))), ((int)(((byte)(113)))));
+            this.CreateProject.Location = new System.Drawing.Point(105, 426);
+            this.CreateProject.Margin = new System.Windows.Forms.Padding(5);
+            this.CreateProject.Name = "CreateProject";
+            this.CreateProject.Size = new System.Drawing.Size(200, 40);
+            this.CreateProject.TabIndex = 14;
+            this.CreateProject.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CreateProject.Click += new System.EventHandler(this.bunifuThinButton23_Click);
             // 
             // BioField
             // 
@@ -197,16 +197,16 @@
             this.BioField.TabIndex = 15;
             this.BioField.Text = "";
             // 
-            // bunifuCustomLabel6
+            // AboutLabel
             // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(422, 170);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(157, 21);
-            this.bunifuCustomLabel6.TabIndex = 16;
-            this.bunifuCustomLabel6.Text = "Коротко про мене";
+            this.AboutLabel.AutoSize = true;
+            this.AboutLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AboutLabel.ForeColor = System.Drawing.Color.Black;
+            this.AboutLabel.Location = new System.Drawing.Point(422, 170);
+            this.AboutLabel.Name = "AboutLabel";
+            this.AboutLabel.Size = new System.Drawing.Size(157, 21);
+            this.AboutLabel.TabIndex = 16;
+            this.AboutLabel.Text = "Коротко про мене";
             // 
             // bunifuCustomLabel7
             // 
@@ -256,20 +256,20 @@
             this.Controls.Add(this.bunifuCustomLabel8);
             this.Controls.Add(this.ClassList);
             this.Controls.Add(this.bunifuCustomLabel7);
-            this.Controls.Add(this.bunifuCustomLabel6);
+            this.Controls.Add(this.AboutLabel);
             this.Controls.Add(this.BioField);
-            this.Controls.Add(this.bunifuThinButton23);
-            this.Controls.Add(this.bunifuThinButton22);
-            this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.bunifuCustomLabel5);
-            this.Controls.Add(this.bunifuCustomLabel4);
-            this.Controls.Add(this.bunifuCustomLabel3);
-            this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.CreateProject);
+            this.Controls.Add(this.Settings);
+            this.Controls.Add(this.Messages);
+            this.Controls.Add(this.Contacts);
+            this.Controls.Add(this.MyProjects);
+            this.Controls.Add(this.JoinIn);
+            this.Controls.Add(this.UserName);
+            this.Controls.Add(this.Avatar);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "ProfileTab";
             this.Size = new System.Drawing.Size(700, 532);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,16 +278,16 @@
         #endregion
 
         private ns1.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private ns1.BunifuCustomLabel bunifuCustomLabel2;
-        private ns1.BunifuCustomLabel bunifuCustomLabel3;
-        private ns1.BunifuCustomLabel bunifuCustomLabel4;
-        private ns1.BunifuCustomLabel bunifuCustomLabel5;
-        private ns1.BunifuThinButton2 bunifuThinButton21;
-        private ns1.BunifuThinButton2 bunifuThinButton22;
-        private ns1.BunifuThinButton2 bunifuThinButton23;
+        private System.Windows.Forms.PictureBox Avatar;
+        private ns1.BunifuCustomLabel UserName;
+        private ns1.BunifuCustomLabel JoinIn;
+        private ns1.BunifuCustomLabel MyProjects;
+        private ns1.BunifuCustomLabel Contacts;
+        private ns1.BunifuThinButton2 Messages;
+        private ns1.BunifuThinButton2 Settings;
+        private ns1.BunifuThinButton2 CreateProject;
         private System.Windows.Forms.RichTextBox BioField;
-        private ns1.BunifuCustomLabel bunifuCustomLabel6;
+        private ns1.BunifuCustomLabel AboutLabel;
         private ns1.BunifuCustomLabel bunifuCustomLabel7;
         private System.Windows.Forms.ListBox ClassList;
         private System.Windows.Forms.ListBox SkillsList;

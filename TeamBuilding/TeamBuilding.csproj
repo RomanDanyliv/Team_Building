@@ -134,6 +134,12 @@
     <Compile Include="Tabs\ProjectInfo.Designer.cs">
       <DependentUpon>ProjectInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tabs\UserListTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\UserListTab.Designer.cs">
+      <DependentUpon>UserListTab.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tabs\SettingTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     <EmbeddedResource Include="Tabs\ProjectInfo.resx">
       <DependentUpon>ProjectInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\UserListTab.resx">
+      <DependentUpon>UserListTab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tabs\SettingTab.resx">
       <DependentUpon>SettingTab.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +212,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Tabs\ActivityTab.resx">
       <DependentUpon>ActivityTab.cs</DependentUpon>
@@ -256,6 +266,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\group-copy-1416476921gn4k8.png" />
+    <None Include="bin\white-conference-call-256.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
