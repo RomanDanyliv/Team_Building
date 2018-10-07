@@ -1,15 +1,14 @@
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.exe.config
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.exe
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\TeamBuilding.pdb
-D:\GitHub\Team_Building\TeamBuilding\bin\Debug\Bunifu_UI_v1.52.dll
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\EntityFramework.dll
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\EntityFramework.SqlServer.dll
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\EntityFramework.xml
 D:\GitHub\Team_Building\TeamBuilding\bin\Debug\EntityFramework.SqlServer.xml
-D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.csprojResolveAssemblyReference.cache
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.StartUp.resources
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.MainForm.resources
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.Tabs.ProjectInfo.resources
+D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.Tabs.UserListTab.resources
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.SettingTab.resources
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.ProjectTab.resources
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.Properties.Resources.resources
@@ -22,4 +21,4 @@ D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.csproj.GenerateResou
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.csproj.CoreCompileInputs.cache
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.exe
 D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.pdb
-D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.Tabs.UserListTab.resources
+D:\GitHub\Team_Building\TeamBuilding\obj\Debug\TeamBuilding.csprojResolveAssemblyReference.cache

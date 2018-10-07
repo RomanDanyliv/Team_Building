@@ -43,6 +43,7 @@ namespace TeamBuilding.Tabs
                     tileButton.colorActive = Color.Transparent;
                     tileButton.Font = new Font("Century Gothic", 12);
                     tileButton.ForeColor = Color.Black;
+                    tileButton.Tag = chosenClass.ClassName;
                     Controls.Add(tileButton);
                     ++Counter;
                 }

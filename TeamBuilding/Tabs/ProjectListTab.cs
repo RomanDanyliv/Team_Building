@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using ns1;
 
@@ -20,7 +21,7 @@ namespace TeamBuilding.Tabs
             InitializeComponent();
         }
 
-        public void ShowProjects()
+        public void ShowProjects(string param = null)
         {
             try
             {
@@ -36,7 +37,13 @@ namespace TeamBuilding.Tabs
                 for (int i = 0; i < ProjectsList.Count; i++)
                 {
                     BunifuThinButton2 thinButton = new BunifuThinButton2 { Name = "thinButton" + i };
-                    chosenProject = ProjectsList[Counter];
+                    chosenProject = ProjectsList[i];
+                    if (param != null)
+                    {
+                        var classes = chosenProject.PrjtClasses.Select(k => k.Classes).Select(m=>m.ClassName);
+                        if (!classes.Contains(param))
+                            continue;
+                    }
                     thinButton.ButtonText = chosenProject.PrjtName;
                     thinButton.Size = new Size(655, 55);
                     thinButton.IdleLineColor = Color.White;
@@ -48,7 +55,7 @@ namespace TeamBuilding.Tabs
                     thinButton.ActiveForecolor = Color.FromArgb(12, 185, 102);
                     thinButton.TextAlign = ContentAlignment.MiddleLeft;
                     thinButton.Location = new Point(50, thinButtonY);
-                    thinButton.Tag =(object)ProjectsList[Counter];
+                    thinButton.Tag =(object)ProjectsList[i];
                     thinButtonY += 400;
                     thinButton.Click += GetProfileInfo;
                     thinButton.Font = new Font("Century Gothic", 12);
@@ -90,7 +97,6 @@ namespace TeamBuilding.Tabs
                     Controls.Add(separator);
                     Controls.Add(customLabel);
                     Controls.Add(likeButton);
-                    ++Counter;
                 }
             }
 
@@ -109,6 +115,11 @@ namespace TeamBuilding.Tabs
             Controls.Add(tab);
             tab.Dock = DockStyle.Fill;
             tab.BringToFront();
+        }
+
+        public void GetProjectsList(object param)
+        {
+            ShowProjects(param.ToString());
         }
 
         private void Like_project(object sender, EventArgs e)

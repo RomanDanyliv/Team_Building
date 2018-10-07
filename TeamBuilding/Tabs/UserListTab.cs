@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using ns1;
 
@@ -20,7 +21,7 @@ namespace TeamBuilding.Tabs
             InitializeComponent();
         }
 
-        public void ShowUsers()
+        public void ShowUsers(string param=null)
         {
             try
             {
@@ -33,9 +34,15 @@ namespace TeamBuilding.Tabs
                 for (int i = 0; i < UsersList.Count; i++)
                 {
                     BunifuThinButton2 thinButton = new BunifuThinButton2 { Name = "UserButton" + i };
-                    chosenUser = UsersList[Counter];
+                    chosenUser = UsersList[i];
+                    if (param != null)
+                    {
+                        var classes = chosenUser.Classes.Select(k=>k.ClassName);
+                        if (!classes.Contains(param))
+                            continue;
+                    }
                     thinButton.ButtonText = $"{chosenUser.Name} {chosenUser.LastName}";
-                    thinButton.Size = new Size(655, 55);
+                    thinButton.Size = new Size(355, 50);
                     thinButton.IdleLineColor = Color.White;
                     thinButton.IdleCornerRadius = 1;
                     thinButton.IdleForecolor = Color.Black;
@@ -44,26 +51,25 @@ namespace TeamBuilding.Tabs
                     thinButton.ActiveLineColor = Color.Black;
                     thinButton.ActiveForecolor = Color.FromArgb(12, 185, 102);
                     thinButton.TextAlign = ContentAlignment.MiddleLeft;
-                    thinButton.Location = new Point(50, NameY);
-                    thinButton.Tag = (object)UsersList[Counter];
-                    NameY += 400;
+                    thinButton.Location = new Point(350, NameY);
+                    thinButton.Tag = (object)UsersList[i];
+                    NameY += 300;
                     thinButton.Click += GetProfileInfo;
                     thinButton.Font = new Font("Century Gothic", 12);
                     thinButton.Visible = true;
 
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pictureBox.Size = new Size(100, 100);
+                    pictureBox.Size = new Size(200, 200);
                     pictureBox.Location = new Point(150, avatarY);
                     if (File.Exists(@"Pictures\" + chosenUser.PicturePath))
                         pictureBox.Image = new Bitmap(@"Pictures\" + chosenUser.PicturePath);
                     else pictureBox.Image = new Bitmap(@"Pictures\default.jpg");
                     pictureBox.Visible = true;
-                    avatarY += 400;
+                    avatarY += 300;
 
                     Controls.Add(thinButton);
                     Controls.Add(pictureBox);
-                    ++Counter;
                 }
             }
 
@@ -71,6 +77,11 @@ namespace TeamBuilding.Tabs
             {
                 MessageBox.Show(exception.ToString());
             }
+        }
+
+        public void GetUsersList(object param)
+        {
+            ShowUsers(param.ToString());
         }
 
         private void GetProfileInfo(object sender, object e)

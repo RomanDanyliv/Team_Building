@@ -63,19 +63,9 @@ namespace TeamBuilding.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap group_copy_1416476921gn4k8 {
+        internal static System.Drawing.Bitmap UsersList {
             get {
-                object obj = ResourceManager.GetObject("group-copy-1416476921gn4k8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap white_conference_call_256 {
-            get {
-                object obj = ResourceManager.GetObject("white-conference-call-256", resourceCulture);
+                object obj = ResourceManager.GetObject("UsersList", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

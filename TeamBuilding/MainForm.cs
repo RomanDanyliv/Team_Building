@@ -235,6 +235,7 @@ namespace TeamBuilding
             try
             {
                 _currentControl.Visible = false;
+                userListTab1.Controls.Clear();
                 userListTab1.ShowUsers();
                 userListTab1.Visible = true;
                 _currentControl = userListTab1;
