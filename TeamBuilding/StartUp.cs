@@ -108,6 +108,7 @@ namespace TeamBuilding
 
                     MessageBox.Show("Sueccussfully registered");
 
+                    Connection.Current = user;
                     var form2 = new MainForm(teamBuildingEntities.Users.Last());
                     Hide();
                     form2.Show();
@@ -137,6 +138,7 @@ namespace TeamBuilding
                     {
                         SelectedUser = user.UsrId;
                         sueccessfullLogin = true;
+                        Connection.Current = user;
                         var form2 = new MainForm(user);
                         Hide();
                         form2.Show();

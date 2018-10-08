@@ -56,14 +56,14 @@
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.loader = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.profileTab1 = new TeamBuilding.Tabs.ProfileTab();
             this.categoriesTab1 = new TeamBuilding.Tabs.CategoriesTab();
             this.activityTab1 = new TeamBuilding.Tabs.ActivityTab();
             this.searchTab1 = new TeamBuilding.Tabs.SearchTab();
             this.projectListTab1 = new TeamBuilding.Tabs.ProjectListTab();
             this.userListTab1 = new TeamBuilding.Tabs.UserListTab();
-            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -285,10 +285,10 @@
             // bunifuFlatButton6
             // 
             this.bunifuFlatButton6.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.bunifuFlatButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(65)))));
             this.bunifuFlatButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton6.BorderRadius = 0;
-            this.bunifuFlatButton6.ButtonText = "Інші користувачі";
+            this.bunifuFlatButton6.ButtonText = "  Інші користувачі";
             this.bunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition2.SetDecoration(this.bunifuFlatButton6, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuFlatButton6, BunifuAnimatorNS.DecorationType.None);
@@ -314,7 +314,7 @@
             this.bunifuFlatButton6.selected = true;
             this.bunifuFlatButton6.Size = new System.Drawing.Size(200, 40);
             this.bunifuFlatButton6.TabIndex = 13;
-            this.bunifuFlatButton6.Text = "Інші користувачі";
+            this.bunifuFlatButton6.Text = "  Інші користувачі";
             this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton6.Textcolor = System.Drawing.Color.Silver;
             this.bunifuFlatButton6.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -339,7 +339,7 @@
             this.bunifuFlatButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton5.BorderRadius = 0;
-            this.bunifuFlatButton5.ButtonText = "Мій профіль";
+            this.bunifuFlatButton5.ButtonText = "  Мій профіль";
             this.bunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition2.SetDecoration(this.bunifuFlatButton5, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuFlatButton5, BunifuAnimatorNS.DecorationType.None);
@@ -364,7 +364,7 @@
             this.bunifuFlatButton5.selected = false;
             this.bunifuFlatButton5.Size = new System.Drawing.Size(200, 40);
             this.bunifuFlatButton5.TabIndex = 11;
-            this.bunifuFlatButton5.Text = "Мій профіль";
+            this.bunifuFlatButton5.Text = "  Мій профіль";
             this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton5.Textcolor = System.Drawing.Color.Silver;
             this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -376,7 +376,7 @@
             this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = "Пошук по проектах";
+            this.bunifuFlatButton4.ButtonText = "  Пошук по проектах";
             this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition2.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
@@ -401,7 +401,7 @@
             this.bunifuFlatButton4.selected = false;
             this.bunifuFlatButton4.Size = new System.Drawing.Size(200, 40);
             this.bunifuFlatButton4.TabIndex = 10;
-            this.bunifuFlatButton4.Text = "Пошук по проектах";
+            this.bunifuFlatButton4.Text = "  Пошук по проектах";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton4.Textcolor = System.Drawing.Color.Silver;
             this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -413,7 +413,7 @@
             this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Остання активність";
+            this.bunifuFlatButton2.ButtonText = "  Остання активність";
             this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition2.SetDecoration(this.bunifuFlatButton2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuFlatButton2, BunifuAnimatorNS.DecorationType.None);
@@ -438,7 +438,7 @@
             this.bunifuFlatButton2.selected = false;
             this.bunifuFlatButton2.Size = new System.Drawing.Size(200, 40);
             this.bunifuFlatButton2.TabIndex = 9;
-            this.bunifuFlatButton2.Text = "Остання активність";
+            this.bunifuFlatButton2.Text = "  Остання активність";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.Silver;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -450,7 +450,7 @@
             this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "Категорії";
+            this.bunifuFlatButton3.ButtonText = "  Категорії";
             this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition2.SetDecoration(this.bunifuFlatButton3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuFlatButton3, BunifuAnimatorNS.DecorationType.None);
@@ -475,7 +475,7 @@
             this.bunifuFlatButton3.selected = false;
             this.bunifuFlatButton3.Size = new System.Drawing.Size(200, 40);
             this.bunifuFlatButton3.TabIndex = 8;
-            this.bunifuFlatButton3.Text = "Категорії";
+            this.bunifuFlatButton3.Text = "  Категорії";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton3.Textcolor = System.Drawing.Color.Silver;
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -514,10 +514,10 @@
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(65)))));
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Проекти";
+            this.bunifuFlatButton1.ButtonText = "  Проекти";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition2.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
@@ -542,7 +542,7 @@
             this.bunifuFlatButton1.selected = true;
             this.bunifuFlatButton1.Size = new System.Drawing.Size(200, 40);
             this.bunifuFlatButton1.TabIndex = 1;
-            this.bunifuFlatButton1.Text = "Проекти";
+            this.bunifuFlatButton1.Text = "  Проекти";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.Silver;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -571,7 +571,7 @@
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(65, 21);
             this.bunifuCustomLabel2.TabIndex = 7;
-            this.bunifuCustomLabel2.Text = "2017 р.";
+            this.bunifuCustomLabel2.Text = "2018 р.";
             // 
             // loader
             // 
@@ -603,6 +603,48 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(750, 513);
             this.panel3.TabIndex = 4;
+            // 
+            // bunifuTransition1
+            // 
+            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.bunifuTransition1.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation2;
+            // 
+            // bunifuTransition2
+            // 
+            this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
+            this.bunifuTransition2.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.bunifuTransition2.DefaultAnimation = animation1;
             // 
             // profileTab1
             // 
@@ -683,48 +725,6 @@
             this.userListTab1.Size = new System.Drawing.Size(750, 513);
             this.userListTab1.TabIndex = 15;
             this.userListTab1.Visible = false;
-            // 
-            // bunifuTransition1
-            // 
-            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.bunifuTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation2;
-            // 
-            // bunifuTransition2
-            // 
-            this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
-            this.bunifuTransition2.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.bunifuTransition2.DefaultAnimation = animation1;
             // 
             // MainForm
             // 

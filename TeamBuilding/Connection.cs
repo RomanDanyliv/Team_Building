@@ -21,5 +21,7 @@ namespace TeamBuilding
         private Connection()
         {   
         }
+
+        public static Users Current = null;
     }
 }

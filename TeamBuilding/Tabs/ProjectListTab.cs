@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
 using System.IO;
@@ -40,7 +41,7 @@ namespace TeamBuilding.Tabs
                     chosenProject = ProjectsList[i];
                     if (param != null)
                     {
-                        var classes = chosenProject.PrjtClasses.Select(k => k.Classes).Select(m=>m.ClassName);
+                        var classes = chosenProject.PrjtClasses.Select(k => k.Classes).Select(m => m.ClassName);
                         if (!classes.Contains(param))
                             continue;
                     }
@@ -55,7 +56,7 @@ namespace TeamBuilding.Tabs
                     thinButton.ActiveForecolor = Color.FromArgb(12, 185, 102);
                     thinButton.TextAlign = ContentAlignment.MiddleLeft;
                     thinButton.Location = new Point(50, thinButtonY);
-                    thinButton.Tag =(object)ProjectsList[i];
+                    thinButton.Tag = (object)ProjectsList[i];
                     thinButtonY += 400;
                     thinButton.Click += GetProfileInfo;
                     thinButton.Font = new Font("Century Gothic", 12);
@@ -65,7 +66,7 @@ namespace TeamBuilding.Tabs
                     pictureBox.Size = new Size(450, 250);
                     pictureBox.Location = new Point(150, pictureBoxY);
                     if (File.Exists(@"Pictures\" + chosenProject.PrjtImagePath))
-                    pictureBox.Image = new Bitmap(@"Pictures\" + chosenProject.PrjtImagePath);
+                        pictureBox.Image = new Bitmap(@"Pictures\" + chosenProject.PrjtImagePath);
                     else pictureBox.Image = new Bitmap(@"Pictures\default.jpg");
                     pictureBoxY += 400;
 
@@ -87,10 +88,15 @@ namespace TeamBuilding.Tabs
                     likeButton.Size = new Size(30, 30);
                     likeButton.BackColor = Color.Transparent;
                     likeButton.SizeMode = PictureBoxSizeMode.StretchImage;
-                    likeButton.Image = NotLikedProject.Image;
+                    List<LikedProjects> lpr = TeamBuildingEntities.LikedProjects.ToList();
+                    if (!lpr.Where(b=>b.LkdUserId==Connection.Current.UsrId && b.LkdPrjtId==chosenProject.PrjtId).Any())
+                        likeButton.Image = NotLikedProject.Image;
+                    else
+                        likeButton.Image = LikedProject.Image;
                     likeButton.Location = new Point(675, likeButtonY);
                     likeButtonY += 400;
-                    likeButton.Click += new EventHandler(Like_project);
+                    likeButton.Tag = chosenProject.PrjtId;
+                    likeButton.Click += Like_project;
 
                     Controls.Add(thinButton);
                     Controls.Add(pictureBox);
@@ -110,7 +116,7 @@ namespace TeamBuilding.Tabs
         {
             ProjectInfo tab = new ProjectInfo();
             tab.Visible = true;
-            tab.LoadInfo((Projects)(sender as BunifuThinButton2).Tag,this);
+            tab.LoadInfo((Projects)(sender as BunifuThinButton2).Tag, this);
             Controls.Clear();
             Controls.Add(tab);
             tab.Dock = DockStyle.Fill;
@@ -126,15 +132,40 @@ namespace TeamBuilding.Tabs
         {
             BunifuImageButton button = sender as BunifuImageButton;
 
-            if (!Liked)
+            List<LikedProjects> lpr = TeamBuildingEntities.LikedProjects.ToList();
+            if (!lpr.Where(b => b.LkdUserId == Connection.Current.UsrId && b.LkdPrjtId == (int)button.Tag).Any())
             {
                 button.Image = LikedProject.Image;
                 Liked = true;
+                try
+                {
+                    TeamBuildingEntities.LikedProjects.Add(new LikedProjects()
+                    {
+                        LkdPrjtId = (int)button.Tag,
+                        LkdUserId = Connection.Current.UsrId
+                    });
+                    TeamBuildingEntities.SaveChanges();
+                }
+                catch (Exception exception)
+                {
+                    Console.WriteLine(exception);
+                    throw;
+                }
             }
             else
             {
                 button.Image = NotLikedProject.Image;
                 Liked = false;
+                try
+                {
+                    TeamBuildingEntities.LikedProjects.Remove(lpr.Where(b => b.LkdUserId == Connection.Current.UsrId && b.LkdPrjtId == (int)button.Tag).First());
+                    TeamBuildingEntities.SaveChanges();
+                }
+                catch (Exception exception)
+                {
+                    Console.WriteLine(exception);
+                    throw;
+                }
             }
         }
     }

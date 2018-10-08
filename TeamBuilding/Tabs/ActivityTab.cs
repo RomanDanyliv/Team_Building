@@ -51,6 +51,12 @@ namespace TeamBuilding.Tabs
                 {
                     listBox2.Items.Add(project.PrjtName);
                 }
+
+                var list = TeamBuildingEntities.LikedProjects.Where(b => b.LkdUserId == chosenUser.UsrId);
+                foreach (var project in list)
+                {
+                    listBox3.Items.Add(TeamBuildingEntities.Projects.Where(g=>g.PrjtId==project.LkdPrjtId).First().PrjtName);
+                }
             }
 
             catch (Exception exception)
